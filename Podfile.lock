@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (5.5.0)
+  - BarcodeScanner (5.0.0)
+  - lottie-ios (3.3.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.5)
+  - BarcodeScanner
+  - lottie-ios
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - BarcodeScanner
+    - lottie-ios
+
+SPEC CHECKSUMS:
+  Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
+  BarcodeScanner: 2f5a53198eae49dc39bf61f2c1f05c04e01ff72d
+  lottie-ios: 6ac74dcc09904798f59b18cb3075c089d76be9ae
+
+PODFILE CHECKSUM: 0c58b141ca8a5980a34180a65591221a0eb7b4b8
+
+COCOAPODS: 1.11.2

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		022CBFD127B6DA96009A84FE /* QrScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022CBFD027B6DA96009A84FE /* QrScreenVC.swift */; };
 		0277CFDD27B677E700AE0CC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0277CFDC27B677E700AE0CC4 /* AppDelegate.swift */; };
 		0277CFDF27B677E700AE0CC4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0277CFDE27B677E700AE0CC4 /* SceneDelegate.swift */; };
 		0277CFE127B677E700AE0CC4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0277CFE027B677E700AE0CC4 /* ViewController.swift */; };
@@ -16,6 +17,12 @@
 		0277CFF427B677E800AE0CC4 /* AyranpinarFiyatGorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0277CFF327B677E800AE0CC4 /* AyranpinarFiyatGorTests.swift */; };
 		0277CFFE27B677E800AE0CC4 /* AyranpinarFiyatGorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0277CFFD27B677E800AE0CC4 /* AyranpinarFiyatGorUITests.swift */; };
 		0277D00027B677E800AE0CC4 /* AyranpinarFiyatGorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0277CFFF27B677E800AE0CC4 /* AyranpinarFiyatGorUITestsLaunchTests.swift */; };
+		0291E06627B6856300BA6648 /* PriceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0291E06527B6856300BA6648 /* PriceModel.swift */; };
+		0291E06827B68E3900BA6648 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0291E06727B68E3900BA6648 /* HomeVC.swift */; };
+		0291E06A27B69C8900BA6648 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0291E06927B69C8900BA6648 /* Util.swift */; };
+		096E57F7C585F1964216D709 /* Pods_AyranpinarFiyatGor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1230B907A9A6C4BDFB475AE /* Pods_AyranpinarFiyatGor.framework */; };
+		43216E7F8E7BEBDB33AAF7F6 /* Pods_AyranpinarFiyatGor_AyranpinarFiyatGorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11F3FA6792AEA3D838E69B6D /* Pods_AyranpinarFiyatGor_AyranpinarFiyatGorUITests.framework */; };
+		886332A3551163E2FCFEA07D /* Pods_AyranpinarFiyatGorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C97B3073A433DEC2BC9107DA /* Pods_AyranpinarFiyatGorTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01B843CAEB07CABE5C30BAB9 /* Pods-AyranpinarFiyatGor-AyranpinarFiyatGorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AyranpinarFiyatGor-AyranpinarFiyatGorUITests.release.xcconfig"; path = "Target Support Files/Pods-AyranpinarFiyatGor-AyranpinarFiyatGorUITests/Pods-AyranpinarFiyatGor-AyranpinarFiyatGorUITests.release.xcconfig"; sourceTree = "<group>"; };
+		022CBFD027B6DA96009A84FE /* QrScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrScreenVC.swift; sourceTree = "<group>"; };
 		0277CFD927B677E700AE0CC4 /* AyranpinarFiyatGor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AyranpinarFiyatGor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0277CFDC27B677E700AE0CC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0277CFDE27B677E700AE0CC4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +58,17 @@
 		0277CFF927B677E800AE0CC4 /* AyranpinarFiyatGorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AyranpinarFiyatGorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0277CFFD27B677E800AE0CC4 /* AyranpinarFiyatGorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AyranpinarFiyatGorUITests.swift; sourceTree = "<group>"; };
 		0277CFFF27B677E800AE0CC4 /* AyranpinarFiyatGorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AyranpinarFiyatGorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0291E06527B6856300BA6648 /* PriceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceModel.swift; sourceTree = "<group>"; };
+		0291E06727B68E3900BA6648 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		0291E06927B69C8900BA6648 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		11F3FA6792AEA3D838E69B6D /* Pods_AyranpinarFiyatGor_AyranpinarFiyatGorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AyranpinarFiyatGor_AyranpinarFiyatGorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		550069A8F2F1F7F868EE2F89 /* Pods-AyranpinarFiyatGorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AyranpinarFiyatGorTests.release.xcconfig"; path = "Target Support Files/Pods-AyranpinarFiyatGorTests/Pods-AyranpinarFiyatGorTests.release.xcconfig"; sourceTree = "<group>"; };
+		570B97DF56F28F4889187D84 /* Pods-AyranpinarFiyatGor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AyranpinarFiyatGor.release.xcconfig"; path = "Target Support Files/Pods-AyranpinarFiyatGor/Pods-AyranpinarFiyatGor.release.xcconfig"; sourceTree = "<group>"; };
+		8105F3B3C2971AF53B57CA36 /* Pods-AyranpinarFiyatGor-AyranpinarFiyatGorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AyranpinarFiyatGor-AyranpinarFiyatGorUITests.debug.xcconfig"; path = "Target Support Files/Pods-AyranpinarFiyatGor-AyranpinarFiyatGorUITests/Pods-AyranpinarFiyatGor-AyranpinarFiyatGorUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8737B1B6508818A2AF3A0AEB /* Pods-AyranpinarFiyatGor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AyranpinarFiyatGor.debug.xcconfig"; path = "Target Support Files/Pods-AyranpinarFiyatGor/Pods-AyranpinarFiyatGor.debug.xcconfig"; sourceTree = "<group>"; };
+		A8A361DCED6789B81949FCC8 /* Pods-AyranpinarFiyatGorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AyranpinarFiyatGorTests.debug.xcconfig"; path = "Target Support Files/Pods-AyranpinarFiyatGorTests/Pods-AyranpinarFiyatGorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C97B3073A433DEC2BC9107DA /* Pods_AyranpinarFiyatGorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AyranpinarFiyatGorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1230B907A9A6C4BDFB475AE /* Pods_AyranpinarFiyatGor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AyranpinarFiyatGor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				096E57F7C585F1964216D709 /* Pods_AyranpinarFiyatGor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				886332A3551163E2FCFEA07D /* Pods_AyranpinarFiyatGorTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43216E7F8E7BEBDB33AAF7F6 /* Pods_AyranpinarFiyatGor_AyranpinarFiyatGorUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +106,8 @@
 				0277CFF227B677E800AE0CC4 /* AyranpinarFiyatGorTests */,
 				0277CFFC27B677E800AE0CC4 /* AyranpinarFiyatGorUITests */,
 				0277CFDA27B677E700AE0CC4 /* Products */,
+				E2CDD879DF50A6360580F89C /* Pods */,
+				B79DBB95677177A02E6530F4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +131,10 @@
 				0277CFE527B677E800AE0CC4 /* Assets.xcassets */,
 				0277CFE727B677E800AE0CC4 /* LaunchScreen.storyboard */,
 				0277CFEA27B677E800AE0CC4 /* Info.plist */,
+				0291E06527B6856300BA6648 /* PriceModel.swift */,
+				0291E06727B68E3900BA6648 /* HomeVC.swift */,
+				0291E06927B69C8900BA6648 /* Util.swift */,
+				022CBFD027B6DA96009A84FE /* QrScreenVC.swift */,
 			);
 			path = AyranpinarFiyatGor;
 			sourceTree = "<group>";
@@ -127,6 +156,29 @@
 			path = AyranpinarFiyatGorUITests;
 			sourceTree = "<group>";
 		};
+		B79DBB95677177A02E6530F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F1230B907A9A6C4BDFB475AE /* Pods_AyranpinarFiyatGor.framework */,
+				11F3FA6792AEA3D838E69B6D /* Pods_AyranpinarFiyatGor_AyranpinarFiyatGorUITests.framework */,
+				C97B3073A433DEC2BC9107DA /* Pods_AyranpinarFiyatGorTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E2CDD879DF50A6360580F89C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8737B1B6508818A2AF3A0AEB /* Pods-AyranpinarFiyatGor.debug.xcconfig */,
+				570B97DF56F28F4889187D84 /* Pods-AyranpinarFiyatGor.release.xcconfig */,
+				8105F3B3C2971AF53B57CA36 /* Pods-AyranpinarFiyatGor-AyranpinarFiyatGorUITests.debug.xcconfig */,
+				01B843CAEB07CABE5C30BAB9 /* Pods-AyranpinarFiyatGor-AyranpinarFiyatGorUITests.release.xcconfig */,
+				A8A361DCED6789B81949FCC8 /* Pods-AyranpinarFiyatGorTests.debug.xcconfig */,
+				550069A8F2F1F7F868EE2F89 /* Pods-AyranpinarFiyatGorTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +186,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0277D00327B677E800AE0CC4 /* Build configuration list for PBXNativeTarget "AyranpinarFiyatGor" */;
 			buildPhases = (
+				37BABB113FC72EE44F58128B /* [CP] Check Pods Manifest.lock */,
 				0277CFD527B677E600AE0CC4 /* Sources */,
 				0277CFD627B677E600AE0CC4 /* Frameworks */,
 				0277CFD727B677E600AE0CC4 /* Resources */,
+				755E74B4335A21E9C6DEB2DE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +205,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0277D00627B677E800AE0CC4 /* Build configuration list for PBXNativeTarget "AyranpinarFiyatGorTests" */;
 			buildPhases = (
+				2658FD2CECACD6FE9F50AD0E /* [CP] Check Pods Manifest.lock */,
 				0277CFEB27B677E800AE0CC4 /* Sources */,
 				0277CFEC27B677E800AE0CC4 /* Frameworks */,
 				0277CFED27B677E800AE0CC4 /* Resources */,
@@ -169,9 +224,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0277D00927B677E800AE0CC4 /* Build configuration list for PBXNativeTarget "AyranpinarFiyatGorUITests" */;
 			buildPhases = (
+				CC2DAEC49FA3A232DD71A3D6 /* [CP] Check Pods Manifest.lock */,
 				0277CFF527B677E800AE0CC4 /* Sources */,
 				0277CFF627B677E800AE0CC4 /* Frameworks */,
 				0277CFF727B677E800AE0CC4 /* Resources */,
+				24C25FE39A2180F22CD438CC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,14 +310,121 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		24C25FE39A2180F22CD438CC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AyranpinarFiyatGor-AyranpinarFiyatGorUITests/Pods-AyranpinarFiyatGor-AyranpinarFiyatGorUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AyranpinarFiyatGor-AyranpinarFiyatGorUITests/Pods-AyranpinarFiyatGor-AyranpinarFiyatGorUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AyranpinarFiyatGor-AyranpinarFiyatGorUITests/Pods-AyranpinarFiyatGor-AyranpinarFiyatGorUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2658FD2CECACD6FE9F50AD0E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AyranpinarFiyatGorTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		37BABB113FC72EE44F58128B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AyranpinarFiyatGor-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		755E74B4335A21E9C6DEB2DE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AyranpinarFiyatGor/Pods-AyranpinarFiyatGor-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AyranpinarFiyatGor/Pods-AyranpinarFiyatGor-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AyranpinarFiyatGor/Pods-AyranpinarFiyatGor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC2DAEC49FA3A232DD71A3D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AyranpinarFiyatGor-AyranpinarFiyatGorUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0277CFD527B677E600AE0CC4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0277CFE127B677E700AE0CC4 /* ViewController.swift in Sources */,
+				0291E06A27B69C8900BA6648 /* Util.swift in Sources */,
 				0277CFDD27B677E700AE0CC4 /* AppDelegate.swift in Sources */,
+				0291E06827B68E3900BA6648 /* HomeVC.swift in Sources */,
 				0277CFDF27B677E700AE0CC4 /* SceneDelegate.swift in Sources */,
+				0291E06627B6856300BA6648 /* PriceModel.swift in Sources */,
+				022CBFD127B6DA96009A84FE /* QrScreenVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,16 +598,19 @@
 		};
 		0277D00427B677E800AE0CC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8737B1B6508818A2AF3A0AEB /* Pods-AyranpinarFiyatGor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LQB7GA7MP9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AyranpinarFiyatGor/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -461,16 +628,19 @@
 		};
 		0277D00527B677E800AE0CC4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 570B97DF56F28F4889187D84 /* Pods-AyranpinarFiyatGor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LQB7GA7MP9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AyranpinarFiyatGor/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -488,6 +658,7 @@
 		};
 		0277D00727B677E800AE0CC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8A361DCED6789B81949FCC8 /* Pods-AyranpinarFiyatGorTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -507,6 +678,7 @@
 		};
 		0277D00827B677E800AE0CC4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 550069A8F2F1F7F868EE2F89 /* Pods-AyranpinarFiyatGorTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -526,6 +698,7 @@
 		};
 		0277D00A27B677E800AE0CC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8105F3B3C2971AF53B57CA36 /* Pods-AyranpinarFiyatGor-AyranpinarFiyatGorUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -543,6 +716,7 @@
 		};
 		0277D00B27B677E800AE0CC4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01B843CAEB07CABE5C30BAB9 /* Pods-AyranpinarFiyatGor-AyranpinarFiyatGorUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

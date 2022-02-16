@@ -20,6 +20,8 @@
 		0291E06627B6856300BA6648 /* PriceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0291E06527B6856300BA6648 /* PriceModel.swift */; };
 		0291E06827B68E3900BA6648 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0291E06727B68E3900BA6648 /* HomeVC.swift */; };
 		0291E06A27B69C8900BA6648 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0291E06927B69C8900BA6648 /* Util.swift */; };
+		029E113B27BCEDD90081FCD8 /* PricesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029E113A27BCEDD90081FCD8 /* PricesTableViewCell.swift */; };
+		029E113D27BD190E0081FCD8 /* SearchWithNameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029E113C27BD190E0081FCD8 /* SearchWithNameVC.swift */; };
 		096E57F7C585F1964216D709 /* Pods_AyranpinarFiyatGor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1230B907A9A6C4BDFB475AE /* Pods_AyranpinarFiyatGor.framework */; };
 		43216E7F8E7BEBDB33AAF7F6 /* Pods_AyranpinarFiyatGor_AyranpinarFiyatGorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11F3FA6792AEA3D838E69B6D /* Pods_AyranpinarFiyatGor_AyranpinarFiyatGorUITests.framework */; };
 		886332A3551163E2FCFEA07D /* Pods_AyranpinarFiyatGorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C97B3073A433DEC2BC9107DA /* Pods_AyranpinarFiyatGorTests.framework */; };
@@ -61,6 +63,8 @@
 		0291E06527B6856300BA6648 /* PriceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceModel.swift; sourceTree = "<group>"; };
 		0291E06727B68E3900BA6648 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		0291E06927B69C8900BA6648 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		029E113A27BCEDD90081FCD8 /* PricesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PricesTableViewCell.swift; sourceTree = "<group>"; };
+		029E113C27BD190E0081FCD8 /* SearchWithNameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchWithNameVC.swift; sourceTree = "<group>"; };
 		11F3FA6792AEA3D838E69B6D /* Pods_AyranpinarFiyatGor_AyranpinarFiyatGorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AyranpinarFiyatGor_AyranpinarFiyatGorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		550069A8F2F1F7F868EE2F89 /* Pods-AyranpinarFiyatGorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AyranpinarFiyatGorTests.release.xcconfig"; path = "Target Support Files/Pods-AyranpinarFiyatGorTests/Pods-AyranpinarFiyatGorTests.release.xcconfig"; sourceTree = "<group>"; };
 		570B97DF56F28F4889187D84 /* Pods-AyranpinarFiyatGor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AyranpinarFiyatGor.release.xcconfig"; path = "Target Support Files/Pods-AyranpinarFiyatGor/Pods-AyranpinarFiyatGor.release.xcconfig"; sourceTree = "<group>"; };
@@ -135,6 +139,8 @@
 				0291E06727B68E3900BA6648 /* HomeVC.swift */,
 				0291E06927B69C8900BA6648 /* Util.swift */,
 				022CBFD027B6DA96009A84FE /* QrScreenVC.swift */,
+				029E113A27BCEDD90081FCD8 /* PricesTableViewCell.swift */,
+				029E113C27BD190E0081FCD8 /* SearchWithNameVC.swift */,
 			);
 			path = AyranpinarFiyatGor;
 			sourceTree = "<group>";
@@ -422,7 +428,9 @@
 				0291E06A27B69C8900BA6648 /* Util.swift in Sources */,
 				0277CFDD27B677E700AE0CC4 /* AppDelegate.swift in Sources */,
 				0291E06827B68E3900BA6648 /* HomeVC.swift in Sources */,
+				029E113D27BD190E0081FCD8 /* SearchWithNameVC.swift in Sources */,
 				0277CFDF27B677E700AE0CC4 /* SceneDelegate.swift in Sources */,
+				029E113B27BCEDD90081FCD8 /* PricesTableViewCell.swift in Sources */,
 				0291E06627B6856300BA6648 /* PriceModel.swift in Sources */,
 				022CBFD127B6DA96009A84FE /* QrScreenVC.swift in Sources */,
 			);
@@ -622,7 +630,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -652,7 +660,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

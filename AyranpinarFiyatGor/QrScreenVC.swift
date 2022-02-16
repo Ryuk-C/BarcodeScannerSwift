@@ -17,14 +17,22 @@ class QrScreenVC: UIViewController {
     @IBOutlet weak var labelPrice: UILabel!
     @IBOutlet weak var topArea: UIView!
     @IBOutlet weak var ivGeri: UIImageView!
+    @IBOutlet weak var pricesTableView: UITableView!
+    @IBOutlet var mainArea: UIView!
     
-    var gidenFiyat = "Null"
+    var productList = [FiyatGorJSON]()
+    var gidenFiyat = ""
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
         let redColor = UIColor(hexString: "cc2829")
         self.topArea.backgroundColor = redColor
+        self.mainArea.backgroundColor = redColor
         // Do any additional setup after loading the view.
+        
+        pricesTableView.delegate = self
+        pricesTableView.dataSource = self
         
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
         ivGeri.isUserInteractionEnabled = true
@@ -87,7 +95,7 @@ class QrScreenVC: UIViewController {
             "Pst_Barkod" : barcode,
             "Pst_CihazKodu" : cihazKodu]
         
-        AF.request("Your awasome Url", method: .post, parameters:parametreler).responseJSON{ [self]
+        AF.request("Your awasome URL", method: .post, parameters:parametreler).responseJSON{ [self]
             response in
             
             if let data = response.data {
@@ -96,36 +104,82 @@ class QrScreenVC: UIViewController {
                          
                     let cevap = try JSONDecoder().decode(PriceModel.self, from: data)
                     
-                    if let liste = cevap.fiyatGorJSON {
-                                                                     
-                        for i in liste {
+                    if cevap.success == 1 {
+                        
+                        
+                        if let liste = cevap.fiyatGorJSON {
+                            
+                            var cevap = 0
+                            
+                            for i in liste {
+                                        
+                                cevap += 1
                                 
-                        
-                            self.gidenFiyat = i.fiyat
+                                self.gidenFiyat = i.fiyat
+                                
+                                print(i.fiyat)
+                                
+                             }
                             
-                            print(i.fiyat)
+                            if cevap > 1 {
+                                
+                                self.productList = liste
+                                
+                                DispatchQueue.main.async {
+                                    self.pricesTableView.reloadData()
+                                }
+                                
+                            }else{
+                                
+                                
+                                let alertControllerBayiiMod = UIAlertController(title: "Fiyat : \(self.gidenFiyat) TL", message: "Barkod okutmaya devam etmek için Tamam butonuna tıklayınız", preferredStyle: .alert)
+                                   
+                                   let tamamActionBayiMod = UIAlertAction(title: "Tamam", style: .cancel){
+                                       
+                                       action in
+                                       
+                                       print("Tamam Tıklandı")
+                                       
+                                       self.avCaptureSession.startRunning()
+                                       
+                                   }
+                                   
+                                   alertControllerBayiiMod.addAction(tamamActionBayiMod)
+                                   
+                                   self.present(alertControllerBayiiMod, animated: true)
+                                
+                            }
+                
+                                            
+                        }else{
                             
-                         }
-                        
-                        let alertControllerBayiiMod = UIAlertController(title: "Fiyat : \(self.gidenFiyat)", message: "Barkod okutmaya devam etmek için Tamam butonuna tıklayınız", preferredStyle: .alert)
-                        
-                        let tamamActionBayiMod = UIAlertAction(title: "Tamam", style: .cancel){
-                            
-                            action in
-                            print("Tamam Tıklandı")
-                            
-                            self.avCaptureSession.startRunning()
                             
                         }
+                    }
+                    
+                    if cevap.success == 0 {
                         
-                        alertControllerBayiiMod.addAction(tamamActionBayiMod)
                         
-                        self.present(alertControllerBayiiMod, animated: true)
-                                        
-                    }else{
+                        let alertControllerBayiiMod = UIAlertController(title: "Ürün Bulunamadı!", message: "Barkod okutmaya devam etmek için Tamam butonuna tıklayınız", preferredStyle: .alert)
+                           
+                           let tamamActionBayiMod = UIAlertAction(title: "Tamam", style: .cancel){
+                               
+                               action in
+                               print("Tamam Tıklandı")
+                               
+                               self.avCaptureSession.startRunning()
+                               
+                           }
+                           
+                           alertControllerBayiiMod.addAction(tamamActionBayiMod)
+                           
+                           self.present(alertControllerBayiiMod, animated: true)
                         
                         
                     }
+                    
+                    
+
                     
                 }catch{
                        
@@ -181,9 +235,7 @@ class QrScreenVC: UIViewController {
 extension QrScreenVC : AVCaptureMetadataOutputObjectsDelegate {
     func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
         
-        //okuma bitince duruyor
         avCaptureSession.stopRunning()
-        //tvRepeat.isHidden = false
         
         if let metadataObject = metadataObjects.first {
             guard let readableObject = metadataObject as? AVMetadataMachineReadableCodeObject else { return }
@@ -198,10 +250,37 @@ extension QrScreenVC : AVCaptureMetadataOutputObjectsDelegate {
                 print(cihazKodu)
                 
             }
-                        
+            
+            
         }
         
        // dismiss(animated: true)
     }
 
+}
+
+extension QrScreenVC:UITableViewDelegate,UITableViewDataSource {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return productList.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let kelime = productList[indexPath.row]
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "fiyatHucre", for: indexPath) as! PricesTableViewCell
+        
+        cell.tvProductName.text = kelime.urunAdi
+        cell.tvProductsPrice.text = kelime.fiyat
+        
+        return cell
+    
+    }
+    
+    
 }

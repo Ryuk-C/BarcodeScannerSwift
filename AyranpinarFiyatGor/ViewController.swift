@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var ivGeri: UIImageView!
     
     var gidenFiyat = "Null"
+    var priceList = [PriceModel]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -78,8 +79,6 @@ class ViewController: UIViewController {
                     self.previewArea.layer.addSublayer(self.avPreviewLayer)
                     self.avCaptureSession.startRunning()
                 }
-        
-        
         
     }
     
@@ -201,10 +200,10 @@ class ViewController: UIViewController {
                         if let liste = cevap.fiyatGorJSON {
                             
                             print("Liste Dolu")
+                            
                                                  
                             for i in liste {
                                     
-                            
                                 self.gidenFiyat = i.fiyat
                                 
                                 print(i.fiyat)

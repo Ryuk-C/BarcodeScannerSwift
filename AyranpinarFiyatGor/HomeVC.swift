@@ -15,7 +15,9 @@ class HomeVC: UIViewController {
     @IBOutlet weak var searchWithName: UIView!
     @IBOutlet weak var labelPrice: UIView!
     @IBOutlet weak var topArea: UIView!
+    @IBOutlet weak var tasarimAlani: UIView!
     
+    @IBOutlet var mainHomeArea: UIView!
     var qrCodeTekliFiyat = "Null"
     
     override func viewDidLoad() {
@@ -25,8 +27,8 @@ class HomeVC: UIViewController {
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(handleTapBarcode(_:)))
         searchWithBarcode.addGestureRecognizer(tapGestureRecognizer)
         
-        print("Test-----\(qrCodeTekliFiyat)")
-
+        let tapGestureRecognizerName = UITapGestureRecognizer(target: self, action: #selector(handleTapName(_:)))
+        searchWithName.addGestureRecognizer(tapGestureRecognizerName)
         
         if qrCodeTekliFiyat != "Null" {
             
@@ -40,11 +42,20 @@ class HomeVC: UIViewController {
 
 }
     
+    @IBAction func handleTapName(_ sender: UITapGestureRecognizer? = nil) {
+                        
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+         
+        let gidilecekVC = storyBoard.instantiateViewController(withIdentifier:"searchWithNameID") as! SearchWithNameVC
+        
+        gidilecekVC.modalPresentationStyle = .currentContext
+
+        self.present(gidilecekVC, animated: true, completion: nil)
+    }
+    
     
     @IBAction func handleTapBarcode(_ sender: UITapGestureRecognizer? = nil) {
-                
-        print("Tiklandı")
-        
+                        
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
          
         let gidilecekVC = storyBoard.instantiateViewController(withIdentifier:"searcWithBarcodeID") as! QrScreenVC
@@ -54,9 +65,10 @@ class HomeVC: UIViewController {
         self.present(gidilecekVC, animated: true, completion: nil)
     }
     
+    
+    
     func design(){
         
-        let grayColor = UIColor(hexString: "F5F6FB")
         let redColor = UIColor(hexString: "cc2829")
         
         self.searchWithBarcode.layer.cornerRadius = 9
@@ -67,6 +79,7 @@ class HomeVC: UIViewController {
         self.searchWithName.layer.borderWidth = 0.85
         self.searchWithName.layer.borderColor = UIColor.gray.cgColor
         self.topArea.backgroundColor = redColor
+        self.mainHomeArea.backgroundColor = redColor
         
     }
     

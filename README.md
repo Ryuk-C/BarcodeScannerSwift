@@ -1,3 +1,4 @@
 # BarcodeScannerSwift
 
-This repository was built for a supermarket. Employees can learn the price of the product with this application.
+- This repository was built for a supermarket. Employees can know the price of the product with this application.
+- You can examine Alamofire, Barcode Scanner(AVFoundation), and Rest API/JSON in this app.
